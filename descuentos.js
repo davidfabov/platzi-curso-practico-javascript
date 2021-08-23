@@ -1,20 +1,9 @@
-// const coupon = [
-//    {
-//      name: "Nunca_pares_de_aprender",
-//      discount: 20,
-//    },
+const coupon = [
+   "Nunca_pares_de_aprender",
+   "In metrics we trust",
+   "Team > heroes",
 
-// {
-//     name: "In metrics we trust",
-//     discount: 45,
-// },
-
-// {
-//     name: "Team > heroes",
-//     discount: 70,
-// }
-
-// ];
+];
 
 function calcularPrecioConDescuento(precio, descuento) {
     const porcentajePrecioConDescuento = 100 - descuento;
@@ -27,11 +16,24 @@ function outputPriceDiscount() {
     const inputPrice = document.getElementById("InputPrice");
     const priceValue = inputPrice.value;
 
-    const inputDiscount = document.getElementById("InputDiscount");
-    const discountValue = inputDiscount.value;
+    const inputCoupon = document.getElementById("InputCoupon");
+    const couponValue = inputCoupon.value;
 
-    const precioConDescuento = calcularPrecioConDescuento(priceValue, discountValue);
+    switch(couponValue) {
+        case "Nunca_pares_de_aprender":
+            descuento = 20;
+            break;
+        case "In metrics we trust":
+            descuento = 45;
+            break;
+        case "Team > heroes":
+            descuento = 60;
+    }
+
+    const precioConDescuento = calcularPrecioConDescuento(priceValue, descuento);
 
     const result = document.getElementById("ResultParagraph");
-    result.innerText = "El precio con descuento es: $" + precioConDescuento;
+    result.innerText = "El precio con descuento es: $" + precioConDescuento
+    
 }
+
