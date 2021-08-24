@@ -11,13 +11,12 @@ function areaCuadrado(lado) {
 
 // Código del triangulo
 
-altura = Math.random()*(5-8)+8;
 
-function perimetroTriangulo (lado) {
-    return lado * 3;
+function perimetroTriangulo (lado1, lado2, base) {
+    return Number(lado1) + Number(lado2) + Number(base);
 }
 
-function areaTriangulo (base) {
+function areaTriangulo (base, altura) {
     return (base * altura) / 2;
 }
 
@@ -67,16 +66,25 @@ function calcularPerimetroTriangulo() {
     const input = document.getElementById("InputTriangulo");
     const value = input.value;
 
-    const perimetro = perimetroTriangulo(value);
+    const inputSide = document.getElementById("InputSide");
+    const sideValue = inputSide.value;
+
+    const inputBase = document.getElementById("InputBase");
+    const baseValue = inputBase.value;
+
+    const perimetro = perimetroTriangulo(value, sideValue, baseValue);
     alert(perimetro);
 }
 
 
 function calcularAreaTriangulo() {
-    const input = document.getElementById("InputTriangulo");
-    const value = input.value;
+    const inputBase = document.getElementById("InputBase");
+    const valueBase = inputBase.value;
 
-    const area = areaTriangulo(value);
+    const inputHeight = document.getElementById("InputAltura");
+    const valueHeight = inputHeight.value;
+
+    const area = areaTriangulo(valueBase,valueHeight);
     alert(area);
 }
 
