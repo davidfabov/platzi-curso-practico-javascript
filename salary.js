@@ -29,3 +29,23 @@ colombia.push({
     name: 'Luis',
     salary: 1200,
 });
+
+colombia.push({
+    name: 'Gabo',
+    salary: 700,
+});
+
+colombia.push({
+    name: 'Alexa',
+    salary: 990,
+});
+
+colombia.push({
+    name: 'Katherine',
+    salary: 1010,
+});
+
+colombia.push({
+    name: 'Samuel',
+    salary: 855,
+});
