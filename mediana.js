@@ -47,3 +47,4 @@ if (isPair(lista.length)) {
     mediana = lista[mitadLista];
 }
 
+console.log(mediana);
