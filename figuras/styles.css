@@ -1,0 +1,64 @@
+body {
+    font-family: 'Padauk', sans-serif;
+}
+
+.image {
+    height: 60px;
+    width: 60px;
+    padding: 5px 0px 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section__Form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: cadetblue;
+    color: whitesmoke;
+    border-radius: 35px;
+    height: 300px;
+    width: 400px;
+}
+label {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+input {
+    background-color: rgba(255, 255, 255, 0.2);
+    font-family: 'Padauk', sans-serif;
+    color: whitesmoke;
+    outline: none;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-radius: 10px;
+    margin: 10px;
+    height: 30px;
+}
+
+button {
+    background-color: teal;
+    font-family: 'Padauk', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: whitesmoke;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    height: 25px;
+    margin: 10px;
+}
